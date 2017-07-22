@@ -14,7 +14,7 @@
     },
     "scripts": {},
     "files": [
-        "dist"
+        "src"
     ],
     "main": "./src/index.js",
     "keywords": [
