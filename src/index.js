@@ -1,26 +1,22 @@
-/* globals ga */
-function appendScript() {
+/* globals _hmt */
+function appendScript(id) {
   const script = document.createElement('script')
   script.async = true
-  script.src = 'https://www.google-analytics.com/analytics.js'
+  script.src = 'https://hm.baidu.com/hm.js?' + id
   document.body.appendChild(script)
 }
 
 function init(id) {
-  if (!window.ga) {
-    appendScript()
-    window.ga = window.ga || function () {
-      (ga.q = ga.q || []).push(arguments)
-    }
-    ga.l = Number(new Date())
-    ga('create', id, 'auto')
+  if (!window._hmt) {
+    window._hmt = []
+    appendScript(id)
   }
 }
 
 function collect(url, id) {
   init(id)
-  ga('set', 'page', url)
-  ga('send', 'pageview')
+  
+  _hmt.push(['_trackPageview', url]);
 }
 
 export default function (router, id) {

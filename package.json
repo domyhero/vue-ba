@@ -1,39 +1,31 @@
 {
-  "name": "vue-ga",
-  "version": "1.0.0",
-  "description": "Google Analytics for Vue.js",
-  "license": "MIT",
-  "repository": "egoist/vue-ga",
-  "author": {
-    "name": "EGOIST",
-    "email": "0x142857@gmail.com",
-    "url": "github.com/egoist"
-  },
-  "engines": {
-    "node": ">=4"
-  },
-  "scripts": {
-    "test": "jest && eslint src/*.js && npm run build",
-    "build": "bili --name index --format umd",
-    "example": "vbuild example/index.js -d"
-  },
-  "files": [
-    "dist"
-  ],
-  "main": "./dist/index.js",
-  "keywords": [
-    "google analytics"
-  ],
-  "devDependencies": {
-    "babel-preset-es2015": "^6.18.0",
-    "babel-preset-vue": "^0.1.0",
-    "bili": "^0.10.0",
-    "eslint": "latest",
-    "eslint-config-rem": "latest",
-    "eva.js": "^1.3.0",
-    "jest-cli": "^15.1.1"
-  },
-  "eslintConfig": {
-    "extends": "rem/esnext-browser"
-  }
+    "name": "vue-ba",
+    "version": "1.0.0",
+    "description": "Baidu Analytics for Vue.js",
+    "license": "MIT",
+    "repository": "lokielse/vue-ba",
+    "author": {
+        "name": "Loki Else",
+        "email": "lokielse@gmail.com",
+        "url": "https://github.com/lokielse"
+    },
+    "engines": {
+        "node": ">=4"
+    },
+    "scripts": {},
+    "files": [
+        "dist"
+    ],
+    "main": "./dist/index.js",
+    "keywords": [
+        "baidu",
+        "analytics",
+        "tongji",
+        "vue",
+        "统计"
+    ],
+    "devDependencies": {
+        "babel-preset-es2015": "^6.18.0",
+        "babel-preset-vue": "^0.1.0"
+    }
 }
